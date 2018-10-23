@@ -1,2 +1,2 @@
 # cordova-pluigin-trtc
-test
+ilive demo under working
