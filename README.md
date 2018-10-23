@@ -1,0 +1,2 @@
+# cordova-pluigin-trtc
+test
