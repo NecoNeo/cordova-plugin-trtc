@@ -74,7 +74,7 @@
             </activity>
         </config-file> -->
 
-        <!-- <source-file src="src/android/Name.java" target-dir="src/com/chuwa/cordova/agora" /> -->
+        <source-file src="src/android/Trtc.java" target-dir="src/com/chuwa/cordova/trtc" />
 
         <!-- <resource-file src="src/android/res/layout/name.xml" target="res/layout/name.xml" /> -->
 
