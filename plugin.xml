@@ -88,7 +88,7 @@
         <!-- <resource-file src="src/android/libs/x86/lib.so" target="jniLibs/x86/lib.so"/>
         <resource-file src="src/android/libs/x86/lib.so" target="jniLibs/x86/lib.so"/> -->
 
-        <framework src="src/android/libs/trtc.gradle" custom="true" type="gradleReference" />
+        <!-- <framework src="src/android/libs/trtc.gradle" custom="true" type="gradleReference" /> -->
 
         <framework src="com.android.support:appcompat-v7:27.0.1" />
     </platform>
