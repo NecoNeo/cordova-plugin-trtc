@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-trtc"
+        version="1.0.0">
+    <name>Trtc</name>
+    <description>TRTC Plugin</description>
+    <keywords>cordova,TRTC,live</keywords>
+    <license>MIT License</license>
+
+    <preference name="APP_ID" default="sdk_app_id" />
+    <preference name="PERMISSION_MIC_DESC" default="应用需要访问您的麦克风" />
+    <preference name="PERMISSION_CAMERA_DESC" default="应用需要访问您的摄像头" />
+
+    <engines>
+        <engine name="cordova-android" version=">=4.0.0" />
+    </engines>
+
+    <js-module src="www/trtc.js" name="trtc">
+        <clobbers target="Trtc" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Trtc">
+                <param name="ios-package" value="TrtcPlugin" />
+                <!-- <param name="onload" value="true" /> -->
+            </feature>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+            <string>$PERMISSION_MIC_DESC</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            <string>$PERMISSION_CAMERA_DESC</string>
+        </config-file>
+
+        <!-- <header-file src="src/ios/name.h" />
+        <source-file src="src/ios/name.m" />
+        <resource-file src="src/ios/name.storyboard" target-dir="" />
+        <resource-file src="src/ios/name.plist" />
+        <resource-file src="src/ios/Assets.xcassets" /> -->
+
+        <!-- libs -->
+        <!-- <framework src="src/ios/lib/framework.framework" custom="true" /> -->
+
+        <!-- <config-file target="*name.plist" parent="AppId">
+            <string>$APP_ID</string>
+        </config-file> -->
+    </platform>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Trtc">
+                <param name="android-package" value="com.chuwa.cordova.trtc.Trtc" />
+                <!-- <param name="onload" value="true" /> -->
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+
+        <config-file target="res/values/strings.xml" parent="/resources">
+            <string name="trtc_app_id">$APP_ID</string>
+        </config-file>
+
+        <!-- <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:label="@string/app_name" android:name="com.chuwa.cordova.trtc.NameActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            </activity>
+        </config-file> -->
+
+        <!-- <source-file src="src/android/Name.java" target-dir="src/com/chuwa/cordova/agora" /> -->
+
+        <!-- <resource-file src="src/android/res/layout/name.xml" target="res/layout/name.xml" /> -->
+
+        <!-- <resource-file src="src/android/res/drawable-hdpi/btn_end_call.png" target="res/drawable-hdpi/btn_end_call.png" />
+        <resource-file src="src/android/res/drawable-hdpi/btn_mute.png" target="res/drawable-hdpi/btn_mute.png" />
+        <resource-file src="src/android/res/drawable-hdpi/btn_switch_camera.png" target="res/drawable-hdpi/btn_switch_camera.png" />
+        <resource-file src="src/android/res/drawable-hdpi/btn_video.png" target="res/drawable-hdpi/btn_video.png" />
+        <resource-file src="src/android/res/drawable-hdpi/btn_voice.png" target="res/drawable-hdpi/btn_voice.png" /> -->
+
+        <!-- <lib-file src="src/android/libs/lib.jar" /> -->
+        <!-- <resource-file src="src/android/libs/x86/lib.so" target="jniLibs/x86/lib.so"/>
+        <resource-file src="src/android/libs/x86/lib.so" target="jniLibs/x86/lib.so"/> -->
+
+        <framework src="src/android/libs/trtc.gradle" custom="true" type="gradleReference" />
+
+        <framework src="com.android.support:appcompat-v7:27.0.1" />
+    </platform>
+
+</plugin>
