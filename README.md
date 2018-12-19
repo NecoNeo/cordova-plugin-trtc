@@ -1,2 +1,2 @@
 # cordova-plugin-trtc
-ilive demo under working
+cordova plugin for trtc under working
