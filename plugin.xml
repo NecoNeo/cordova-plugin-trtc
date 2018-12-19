@@ -119,18 +119,37 @@
         <source-file src="src/android/videocall/bussiness/model/PrivateMapKeyInfo.java" target-dir="src/com/tencent/qcloud/videocall/bussiness/model" />
         <source-file src="src/android/videocall/bussiness/model/UserInfo.java" target-dir="src/com/tencent/qcloud/videocall/bussiness/model" />
 
+        <resource-file src="src/android/res/layout/create_activity.xml" target="res/layout/create_activity.xml" />
+        <resource-file src="src/android/res/layout/item_msg.xml" target="res/layout/item_msg.xml" />
+        <resource-file src="src/android/res/layout/room_activity.xml" target="res/layout/room_activity.xml" />
 
-        <!-- <resource-file src="src/android/res/layout/name.xml" target="res/layout/name.xml" /> -->
+        <resource-file src="src/android/res/drawable/img_chat_black.xml" target="res/drawabl/img_chat_black.xml" />
+        <resource-file src="src/android/res/drawable/radio_border.xml" target="res/drawabl/radio_border.xml" />
+        <resource-file src="src/android/res/drawable/underline.xml" target="res/drawabl/underline.xml" />
 
-        <!-- <resource-file src="src/android/res/drawable-hdpi/btn_end_call.png" target="res/drawable-hdpi/btn_end_call.png" />
-        <resource-file src="src/android/res/drawable-hdpi/btn_mute.png" target="res/drawable-hdpi/btn_mute.png" />
-        <resource-file src="src/android/res/drawable-hdpi/btn_switch_camera.png" target="res/drawable-hdpi/btn_switch_camera.png" />
-        <resource-file src="src/android/res/drawable-hdpi/btn_video.png" target="res/drawable-hdpi/btn_video.png" />
-        <resource-file src="src/android/res/drawable-hdpi/btn_voice.png" target="res/drawable-hdpi/btn_voice.png" /> -->
+        <resource-file src="src/android/res/values/arrays.xml" target="res/values/arrays.xml" />
+        <resource-file src="src/android/res/values/colors.xml" target="res/values/colors.xml" />
+        <resource-file src="src/android/res/values/dimens.xml" target="res/values/dimens.xml" />
+        <resource-file src="src/android/res/values/strings.xml" target="res/values/strings.xml" />
+        <resource-file src="src/android/res/values/styles.xml" target="res/values/styles.xml" />
+
+        <resource-file src="src/android/res/values-v19/styles.xml" target="res/values-v19/styles.xml" />
+
+        <resource-file src="src/android/res/mipmap-hdpi/beauty.png" target="res/mipmap-hdpi/beauty.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/camera.png" target="res/mipmap-hdpi/camera.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/camera2.png" target="res/mipmap-hdpi/camera2.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/chat.png" target="res/mipmap-hdpi/chat.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/com_bg.png" target="res/mipmap-hdpi/com_bg.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/feedback.png" target="res/mipmap-hdpi/feedback.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/log.png" target="res/mipmap-hdpi/log.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/log2.png" target="res/mipmap-hdpi/log2.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/mic.png" target="res/mipmap-hdpi/mic.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/mic2.png" target="res/mipmap-hdpi/mic2.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/multiroom.png" target="res/mipmap-hdpi/multiroom.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/muti_room_bg.png" target="res/mipmap-hdpi/muti_room_bg.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/role.png" target="res/mipmap-hdpi/role.png" />
 
         <!-- <lib-file src="src/android/libs/lib.jar" /> -->
-        <!-- <resource-file src="src/android/libs/x86/lib.so" target="jniLibs/x86/lib.so"/>
-        <resource-file src="src/android/libs/x86/lib.so" target="jniLibs/x86/lib.so"/> -->
 
         <framework src="src/android/libs/trtc.gradle" custom="true" type="gradleReference" />
 
