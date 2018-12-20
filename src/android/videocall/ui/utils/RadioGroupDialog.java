@@ -8,7 +8,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 
-import com.tencent.qcloud.videocall.R;
+import com.chuwa.cordova.trtc.FakeR;
 
 import java.util.ArrayList;
 
@@ -26,7 +26,7 @@ public class RadioGroupDialog extends Dialog implements RadioGroup.OnCheckedChan
     }
 
     public RadioGroupDialog(Context context, String[] menus) {
-        super(context, R.style.common_dlg);
+        super(context, FakeR().getId(content, "style", "common_dlg"));
         rgMain = new RadioGroup(context);
         setContentView(rgMain);
 

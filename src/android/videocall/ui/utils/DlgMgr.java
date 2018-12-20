@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tencent.qcloud.videocall.R;
+import com.chuwa.cordova.trtc.FakeR;
 
 
 /**
@@ -21,10 +21,10 @@ public class DlgMgr {
             Resources res = dialog.getContext().getResources();
             // 获取标题title
             TextView tvTitle = (TextView) dialog.findViewById(res.getIdentifier("alertTitle", "id", "android"));
-            tvTitle.setTextColor(context.getResources().getColor(R.color.colorWhite));
+            tvTitle.setTextColor(context.getResources().getColor(FakeR.getId(context, "color", "colorWhite")));
             // 获取分隔线
             View divider = dialog.findViewById(res.getIdentifier("titleDivider", "id", "android"));
-            divider.setBackgroundResource(R.color.colorWhite);
+            divider.setBackgroundResource(FakeR.getId(context, "color", "colorWhite"));
         }catch (Exception e){
         }
     }
@@ -46,7 +46,7 @@ public class DlgMgr {
     // 显示提示信息
     public static AlertDialog showMsg(Context context, String msg){
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle(R.string.msg_title)
+        builder.setTitle(FakeR.getId(context, "string", "msg_title"))
                 .setMessage(msg);
         return showAlertDlg(context, builder);
     }
