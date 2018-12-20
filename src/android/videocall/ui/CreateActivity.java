@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tencent.qcloud.videocall.R;
+import com.chuwa.cordova.trtc.FakeR;
 import com.tencent.qcloud.videocall.bussiness.OKHelper;
 import com.tencent.qcloud.videocall.bussiness.model.LoginInfo;
 import com.tencent.qcloud.videocall.bussiness.model.UserInfo;
@@ -36,13 +36,16 @@ public class CreateActivity extends Activity implements SyncUserInfoView, LoginV
 
     private boolean bLogin = false;
 
+    private FakeR fakeR;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.create_activity);
+        fakeR = new FakeR(this);
+        setContentView(fakeR.getId("layout", "create_activity"));
 
-        etRoomId = (EditText)findViewById(R.id.et_room_name);
-        tvCreate = (TextView)findViewById(R.id.tv_enter);
+        etRoomId = (EditText)findViewById(fakeR.getId("id", "et_room_name"));
+        tvCreate = (TextView)findViewById(fakeR.getId("id", "tv_enter"));
 
         tvCreate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,7 +113,7 @@ public class CreateActivity extends Activity implements SyncUserInfoView, LoginV
     public void onLoginSuccess(String userId) {
         bLogin = true;
         SDKHelper.getInstance().startSpeedTest();
-        DlgMgr.showToast(getContext(), getString(R.string.str_login_success));
+        DlgMgr.showToast(getContext(), getString(fakeR.getId("string", "str_login_success")));
     }
 
     @Override
@@ -123,7 +126,7 @@ public class CreateActivity extends Activity implements SyncUserInfoView, LoginV
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                TextView tvSpeedInfo = (TextView)findViewById(R.id.tv_speed_test_info);
+                TextView tvSpeedInfo = (TextView)findViewById(fakeR.getId("id", "tv_speed_test_info"));
                 if (null != tvSpeedInfo){
                     String oldTest = tvSpeedInfo.getText().toString();
                     oldTest += tips + "\n";
