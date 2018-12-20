@@ -123,9 +123,9 @@
         <resource-file src="src/android/res/layout/item_msg.xml" target="res/layout/item_msg.xml" />
         <resource-file src="src/android/res/layout/room_activity.xml" target="res/layout/room_activity.xml" />
 
-        <resource-file src="src/android/res/drawable/img_chat_black.xml" target="res/drawabl/img_chat_black.xml" />
-        <resource-file src="src/android/res/drawable/radio_border.xml" target="res/drawabl/radio_border.xml" />
-        <resource-file src="src/android/res/drawable/underline.xml" target="res/drawabl/underline.xml" />
+        <resource-file src="src/android/res/drawable/img_chat_black.xml" target="res/drawable/img_chat_black.xml" />
+        <resource-file src="src/android/res/drawable/radio_border.xml" target="res/drawable/radio_border.xml" />
+        <resource-file src="src/android/res/drawable/underline.xml" target="res/drawable/underline.xml" />
 
         <resource-file src="src/android/res/values/arrays.xml" target="res/values/arrays.xml" />
         <resource-file src="src/android/res/values/colors.xml" target="res/values/colors.xml" />
