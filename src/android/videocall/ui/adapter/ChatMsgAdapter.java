@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.tencent.ilivesdk.data.ILiveMessage;
 import com.tencent.ilivesdk.data.msg.ILiveTextMessage;
-import com.tencent.qcloud.videocall.R;
+import com.chuwa.cordova.trtc.FakeR;
 
 import java.util.List;
 
@@ -60,10 +60,10 @@ public class ChatMsgAdapter extends BaseAdapter {
         if (convertView != null) {
             holder = (ViewHolder)convertView.getTag();
         } else {
-            convertView = LayoutInflater.from(context).inflate(R.layout.item_msg, null);
+            convertView = LayoutInflater.from(context).inflate(FakeR.getId(context, "layout", "item_msg"), null);
 
             holder = new ViewHolder();
-            holder.tvMsgInfo = (TextView) convertView.findViewById(R.id.tv_chat_msg);
+            holder.tvMsgInfo = (TextView) convertView.findViewById(FakeR.getId(context, "id", "tv_chat_msg"));
 
             convertView.setTag(holder);
         }
@@ -75,7 +75,7 @@ public class ChatMsgAdapter extends BaseAdapter {
                     SpannableString spanString = new SpannableString(info.getSender() + "  " + ((ILiveTextMessage)info).getText());
                     spanString.setSpan(new ForegroundColorSpan(calcNameColor(info.getSender())),
                             0, info.getSender().length(), Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
-                    holder.tvMsgInfo.setTextColor(context.getResources().getColor(R.color.colorWhite));
+                    holder.tvMsgInfo.setTextColor(context.getResources().getColor(FakeR.getId(convertView.getContext(), "color", "colorWhite")));
                     holder.tvMsgInfo.setText(spanString);
                     break;
             }
@@ -97,22 +97,22 @@ public class ChatMsgAdapter extends BaseAdapter {
 
         switch (idx & 0x7) {
             case 1:
-                return context.getResources().getColor(R.color.colorSendName1);
+                return context.getResources().getColor(FakeR.getId(context, "color", "colorSendName1"));
             case 2:
-                return context.getResources().getColor(R.color.colorSendName2);
+                return context.getResources().getColor(FakeR.getId(context, "color", "colorSendName2"));
             case 3:
-                return context.getResources().getColor(R.color.colorSendName3);
+                return context.getResources().getColor(FakeR.getId(context, "color", "colorSendName3"));
             case 4:
-                return context.getResources().getColor(R.color.colorSendName4);
+                return context.getResources().getColor(FakeR.getId(context, "color", "colorSendName4"));
             case 5:
-                return context.getResources().getColor(R.color.colorSendName5);
+                return context.getResources().getColor(FakeR.getId(context, "color", "colorSendName5"));
             case 6:
-                return context.getResources().getColor(R.color.colorSendName6);
+                return context.getResources().getColor(FakeR.getId(context, "color", "colorSendName6"));
             case 7:
-                return context.getResources().getColor(R.color.colorSendName7);
+                return context.getResources().getColor(FakeR.getId(context, "color", "colorSendName7"));
             case 0:
             default:
-                return context.getResources().getColor(R.color.colorSendName);
+                return context.getResources().getColor(FakeR.getId(context, "color", "colorSendName"));
         }
     }
 }

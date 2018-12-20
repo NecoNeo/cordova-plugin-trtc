@@ -29,7 +29,7 @@ import com.tencent.ilivesdk.view.AVRootView;
 import com.tencent.ilivesdk.view.AVVideoView;
 import com.tencent.ilivesdk.view.VideoListener;
 import com.tencent.liteav.beauty.TXCVideoPreprocessor;
-import com.tencent.qcloud.videocall.R;
+import com.chuwa.cordova.trtc.FakeR;
 import com.tencent.qcloud.videocall.bussiness.model.BussinessConstants;
 import com.tencent.qcloud.videocall.bussiness.model.UserInfo;
 import com.tencent.qcloud.videocall.trtcsdk.model.RoomTipsInfo;
@@ -176,7 +176,7 @@ public class SDKHelper implements ILiveLoginManager.TILVBStatusListener,
         avRootView.setLocalFullScreen(false);
         avRootView.setSubMarginY(80);
         avRootView.setGravity(AVRootView.LAYOUT_GRAVITY_RIGHT);
-        avRootView.setBackground(R.mipmap.com_bg);
+        avRootView.setBackground(FakeR.getId(avRootView.getContext(), "mipmap", "com_bg"));
         avRootView.setSubCreatedListener(new AVRootView.onSubViewCreatedListener() {
             @Override
             public void onSubViewCreated() {
