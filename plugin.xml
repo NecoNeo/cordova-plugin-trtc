@@ -73,7 +73,6 @@
 
         <config-file target="res/values/strings.xml" parent="/resources">
             <string name="trtc_app_id">$APP_ID</string>
-            <string name="app_name">腾讯视频通话</string>
             <string name="str_enter_tips">腾讯视频通话</string>
             <string name="str_room_title">房间名</string>
             <string name="str_room_id">房间ID</string>
@@ -158,6 +157,7 @@
         <resource-file src="src/android/res/values-v19/styles.xml" target="res/values-v19/styles.xml" />
 
         <resource-file src="src/android/res/mipmap-hdpi/beauty.png" target="res/mipmap-hdpi/beauty.png" />
+        <resource-file src="src/android/res/mipmap-hdpi/beauty2.png" target="res/mipmap-hdpi/beauty2.png" />
         <resource-file src="src/android/res/mipmap-hdpi/camera.png" target="res/mipmap-hdpi/camera.png" />
         <resource-file src="src/android/res/mipmap-hdpi/camera2.png" target="res/mipmap-hdpi/camera2.png" />
         <resource-file src="src/android/res/mipmap-hdpi/chat.png" target="res/mipmap-hdpi/chat.png" />
