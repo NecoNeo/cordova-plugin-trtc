@@ -26,7 +26,7 @@ import com.tencent.ilivesdk.data.msg.ILiveCustomMessage;
 import com.tencent.ilivesdk.data.msg.ILiveTextMessage;
 import com.tencent.ilivesdk.listener.ILiveMessageListener;
 import com.tencent.ilivesdk.view.AVRootView;
-import com.tencent.qcloud.videocall.R;
+import com.chuwa.cordova.trtc.FakeR;
 import com.tencent.qcloud.videocall.bussiness.model.BussinessConstants;
 import com.tencent.qcloud.videocall.bussiness.model.PrivateMapKeyInfo;
 import com.tencent.qcloud.videocall.bussiness.view.SyncPrivateMapkeyView;
@@ -63,9 +63,12 @@ public class RoomActivity extends Activity implements ILiveMessageListener, View
 
     private boolean bFrontCamera = true, bBeautyEnable = true, bMicEnable = true, bLogEnable = false, bChatEnable = false;
 
+    private FakeR fakeR;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        fakeR = new FakeR(this);
 
         initView();
 
@@ -88,7 +91,7 @@ public class RoomActivity extends Activity implements ILiveMessageListener, View
     @Override
     protected void onResume() {
         super.onResume();
-        SDKHelper.getInstance().setTipsInfoColor(getResources().getColor(R.color.colorAccent));
+        SDKHelper.getInstance().setTipsInfoColor(getResources().getColor(fakeR.getId("color", "colorAccent")));
     }
 
     @Override
@@ -118,26 +121,26 @@ public class RoomActivity extends Activity implements ILiveMessageListener, View
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.ll_switch){
+        if (v.getId() == fakeR.getId("id", "ll_switch")){
             bFrontCamera = !bFrontCamera;
             SDKHelper.getInstance().switchCamera(bFrontCamera);
-            ivSwitch.setImageResource(bFrontCamera ? R.mipmap.camera : R.mipmap.camera2);
-        }else if (v.getId() == R.id.ll_voice){
+            ivSwitch.setImageResource(bFrontCamera ? fakeR.getId("mipmap", "camera") : fakeR.getId("mipmap", "camera2"));
+        }else if (v.getId() == fakeR.getId("id", "ll_voice")){
             bMicEnable = !bMicEnable;
             SDKHelper.getInstance().enableMic(bMicEnable);
-            ivMic.setImageResource(bMicEnable ? R.mipmap.mic : R.mipmap.mic2);
-        }else if (v.getId() == R.id.ll_log){
+            ivMic.setImageResource(bMicEnable ? fakeR.getId("mipmap", "mic") : fakeR.getId("mipmap", "mic2"));
+        }else if (v.getId() == fakeR.getId("id", "ll_log")){
             changeLogStatus(!bLogEnable);
-        }else if (v.getId() == R.id.ll_beauty){
+        }else if (v.getId() == fakeR.getId("id", "ll_beauty")){
             bBeautyEnable = !bBeautyEnable;
             SDKHelper.getInstance().enableBeauty(bBeautyEnable);
-            ivBeauty.setImageResource(bBeautyEnable ? R.mipmap.beauty : R.mipmap.beauty2);
-        }else if (v.getId() == R.id.ll_role){
+            ivBeauty.setImageResource(bBeautyEnable ? fakeR.getId("mipmap", "beauty") : fakeR.getId("mipmap", "beauty2"));
+        }else if (v.getId() == fakeR.getId("id", "ll_role")){
             if (null != roleDialog)
                 roleDialog.show();
-        }else if (v.getId() == R.id.ll_chat){
+        }else if (v.getId() == fakeR.getId("id", "ll_chat")){
             changeChatStatus(!bChatEnable);
-        }else if (v.getId() == R.id.ll_feedback){
+        }else if (v.getId() == fakeR.getId("id", "ll_feedback")){
             if (null != feedDialog) {
                 feedDialog.clearCheck();
                 if (null != inputDlg && inputDlg.isShowing()){
@@ -204,7 +207,7 @@ public class RoomActivity extends Activity implements ILiveMessageListener, View
     @Override
     public void onFeedBackResult(String module, int errCode, String errMsg) {
         if (ILiveConstants.NO_ERR == errCode) {
-            DlgMgr.showToast(getContext(), getResources().getString(R.string.str_feedback_ret));
+            DlgMgr.showToast(getContext(), getResources().getString(fakeR.getId("string", "str_feedback_ret")));
         }else{
             DlgMgr.showMsg(getContext(), "upload failed:" + module + "|" + errCode + "|" + errMsg);
         }
@@ -212,7 +215,7 @@ public class RoomActivity extends Activity implements ILiveMessageListener, View
 
     @Override
     public void onTipsInfo(String tips) {
-        ((TextView) findViewById(R.id.tv_status)).setText(tips);
+        ((TextView) findViewById(fakeR.getId("id", "tv_status"))).setText(tips);
     }
 
     @Override
@@ -287,23 +290,23 @@ public class RoomActivity extends Activity implements ILiveMessageListener, View
     }
 
     private void initView() {
-        setContentView(R.layout.room_activity);
-        avRootView = (AVRootView) findViewById(R.id.av_root_view);
-        tvRoomName = (TextView) findViewById(R.id.tv_room_name);
-        tvRoomId = (TextView) findViewById(R.id.tv_room_id);
-        initClickableLayout(R.id.ll_chat);
-        initClickableLayout(R.id.ll_switch);
-        initClickableLayout(R.id.ll_beauty);
-        initClickableLayout(R.id.ll_voice);
-        initClickableLayout(R.id.ll_log);
-        initClickableLayout(R.id.ll_role);
-        initClickableLayout(R.id.ll_feedback);
-        ivSwitch = (ImageView) findViewById(R.id.iv_switch);
-        ivBeauty = (ImageView) findViewById(R.id.iv_beauty);
-        ivMic = (ImageView) findViewById(R.id.iv_mic);
-        ivLog = (ImageView) findViewById(R.id.iv_log);
-        lvChatMsg = (MsgListView) findViewById(R.id.lv_chat_msg);
-        etMsg = (EditText) findViewById(R.id.et_msg);
+        setContentView(fakeR.getId("layout", "room_activity"));
+        avRootView = (AVRootView) findViewById(fakeR.getId("id", "av_root_view"));
+        tvRoomName = (TextView) findViewById(fakeR.getId("id", "tv_room_name"));
+        tvRoomId = (TextView) findViewById(fakeR.getId("id", "tv_room_id"));
+        initClickableLayout(fakeR.getId("id", "ll_chat"));
+        initClickableLayout(fakeR.getId("id", "ll_switch"));
+        initClickableLayout(fakeR.getId("id", "ll_beauty"));
+        initClickableLayout(fakeR.getId("id", "ll_voice"));
+        initClickableLayout(fakeR.getId("id", "ll_log"));
+        initClickableLayout(fakeR.getId("id", "ll_role"));
+        initClickableLayout(fakeR.getId("id", "ll_feedback"));
+        ivSwitch = (ImageView) findViewById(fakeR.getId("id", "iv_switch"));
+        ivBeauty = (ImageView) findViewById(fakeR.getId("id", "iv_beauty"));
+        ivMic = (ImageView) findViewById(fakeR.getId("id", "iv_mic"));
+        ivLog = (ImageView) findViewById(fakeR.getId("id", "iv_log"));
+        lvChatMsg = (MsgListView) findViewById(fakeR.getId("id", "lv_chat_msg"));
+        etMsg = (EditText) findViewById(fakeR.getId("id", "et_msg"));
         etMsg.setOnEditorActionListener(new TextView.OnEditorActionListener() {
 
             @Override
@@ -329,10 +332,10 @@ public class RoomActivity extends Activity implements ILiveMessageListener, View
     private RadioGroupDialog roleDialog;
 
     private void initRoleDialog() {
-        final String[] roles = getResources().getStringArray(R.array.roleinfos);
-        final String[] values = getResources().getStringArray(R.array.roles);
+        final String[] roles = getResources().getStringArray(fakeR.getId("array", "roleinfos"));
+        final String[] values = getResources().getStringArray(fakeR.getId("array", "roles"));
         roleDialog = new RadioGroupDialog(this, roles);
-        roleDialog.setTitle(R.string.str_set_role);
+        roleDialog.setTitle(fakeR.getId("string", "str_set_role"));
         roleDialog.setSelected(2);
         roleDialog.setOnItemClickListener(new RadioGroupDialog.onItemClickListener() {
             @Override
@@ -346,9 +349,9 @@ public class RoomActivity extends Activity implements ILiveMessageListener, View
     private RadioGroupDialog feedDialog;
 
     private void initFeedBackDialog() {
-        final String[] problems = getResources().getStringArray(R.array.feedback);
+        final String[] problems = getResources().getStringArray(fakeR.getId("array", "feedback"));
         feedDialog = new RadioGroupDialog(this, problems);
-        feedDialog.setTitle(R.string.str_set_problem);
+        feedDialog.setTitle(fakeR.getId("string", "str_set_problem"));
         feedDialog.setOnItemClickListener(new RadioGroupDialog.onItemClickListener() {
             @Override
             public void onItemClick(final int position) {
@@ -368,8 +371,8 @@ public class RoomActivity extends Activity implements ILiveMessageListener, View
             inputDlg.dismiss();
             inputDlg = null;
         }
-        AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), R.style.full_dlg);
-        builder.setTitle(R.string.str_problem_other);
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), fakeR.getId("style", "full_dlg"));
+        builder.setTitle(fakeR.getId("string", "str_problem_other"));
 
         final EditText input = new EditText(getContext());
         input.setSingleLine(false);
@@ -397,8 +400,8 @@ public class RoomActivity extends Activity implements ILiveMessageListener, View
 
     private void changeLogStatus(boolean enable){
         bLogEnable = enable;
-        findViewById(R.id.tv_status).setVisibility(bLogEnable ? View.VISIBLE : View.GONE);
-        ivLog.setImageResource(bLogEnable ? R.mipmap.log2 : R.mipmap.log);
+        findViewById(fakeR.getId("id", "tv_status")).setVisibility(bLogEnable ? View.VISIBLE : View.GONE);
+        ivLog.setImageResource(bLogEnable ? fakeR.getId("mipmap", "log2") : fakeR.getId("mipmap", "log"));
 
         SDKHelper.getInstance().enableTipsInfo(bLogEnable);
     }
