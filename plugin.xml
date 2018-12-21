@@ -92,9 +92,9 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:name="com.tencent.qcloud.videocall.ui.CreateActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <activity android:name="com.chuwa.cordova.trtc.CreateActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
             </activity>
-            <activity android:name="com.tencent.qcloud.videocall.ui.RoomActivity" android:windowSoftInputMode="adjustPan" android:launchMode="singleInstance" android:screenOrientation="portrait">
+            <activity android:name="com.chuwa.cordova.trtc.RoomActivity" android:windowSoftInputMode="adjustPan" android:launchMode="singleInstance" android:screenOrientation="portrait">
             </activity>
         </config-file>
 
