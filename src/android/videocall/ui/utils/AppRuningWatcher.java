@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.ui.utils;
+package com.chuwa.cordova.trtc;
 
 import android.app.ActivityManager;
 import android.content.ComponentName;

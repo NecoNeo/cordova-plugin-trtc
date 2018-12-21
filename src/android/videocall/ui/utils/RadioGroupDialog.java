@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.ui.utils;
+package com.chuwa.cordova.trtc;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -6,9 +6,6 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-
-
-import com.chuwa.cordova.trtc.FakeR;
 
 import java.util.ArrayList;
 

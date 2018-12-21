@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.trtcsdk.model;
+package com.chuwa.cordova.trtc;
 
 import android.util.Log;
 

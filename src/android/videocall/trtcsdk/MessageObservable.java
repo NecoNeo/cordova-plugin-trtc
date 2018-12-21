@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.trtcsdk;
+package com.chuwa.cordova.trtc;
 
 import com.tencent.TIMMessage;
 import com.tencent.TIMMessageListener;

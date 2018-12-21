@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.ui;
+package com.chuwa.cordova.trtc;
 
 import android.Manifest;
 import android.app.Activity;
@@ -14,15 +14,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.chuwa.cordova.trtc.FakeR;
-import com.tencent.qcloud.videocall.bussiness.OKHelper;
-import com.tencent.qcloud.videocall.bussiness.model.LoginInfo;
-import com.tencent.qcloud.videocall.bussiness.model.UserInfo;
-import com.tencent.qcloud.videocall.bussiness.view.SyncUserInfoView;
-import com.tencent.qcloud.videocall.trtcsdk.SDKHelper;
-import com.tencent.qcloud.videocall.trtcsdk.view.LoginView;
-import com.tencent.qcloud.videocall.trtcsdk.view.SpeedTestView;
-import com.tencent.qcloud.videocall.ui.utils.DlgMgr;
 
 import java.util.ArrayList;
 import java.util.List;

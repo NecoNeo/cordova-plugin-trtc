@@ -1,14 +1,8 @@
-package com.tencent.qcloud.videocall.bussiness;
+package com.chuwa.cordova.trtc;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-
-import com.tencent.qcloud.videocall.bussiness.model.BussinessConstants;
-import com.tencent.qcloud.videocall.bussiness.model.PrivateMapKeyInfo;
-import com.tencent.qcloud.videocall.bussiness.model.LoginInfo;
-import com.tencent.qcloud.videocall.bussiness.view.SyncPrivateMapkeyView;
-import com.tencent.qcloud.videocall.bussiness.view.SyncUserInfoView;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;

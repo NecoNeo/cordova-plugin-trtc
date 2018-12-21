@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.trtcsdk.view;
+package com.chuwa.cordova.trtc;
 
 /**
  * Created by xkazer on 2018/10/17.

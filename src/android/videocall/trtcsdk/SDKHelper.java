@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.trtcsdk;
+package com.chuwa.cordova.trtc;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -29,17 +29,7 @@ import com.tencent.ilivesdk.view.AVRootView;
 import com.tencent.ilivesdk.view.AVVideoView;
 import com.tencent.ilivesdk.view.VideoListener;
 import com.tencent.liteav.beauty.TXCVideoPreprocessor;
-import com.chuwa.cordova.trtc.FakeR;
-import com.tencent.qcloud.videocall.bussiness.model.BussinessConstants;
-import com.tencent.qcloud.videocall.bussiness.model.UserInfo;
-import com.tencent.qcloud.videocall.trtcsdk.model.RoomTipsInfo;
-import com.tencent.qcloud.videocall.trtcsdk.view.LoginView;
-import com.tencent.qcloud.videocall.trtcsdk.view.OfflineView;
-import com.tencent.qcloud.videocall.trtcsdk.view.RoomView;
-import com.tencent.qcloud.videocall.trtcsdk.view.SpeedTestView;
-import com.tencent.qcloud.videocall.trtcsdk.view.TipsView;
-import com.tencent.qcloud.videocall.ui.Constants;
-import com.tencent.qcloud.videocall.ui.utils.DlgMgr;
+
 
 import java.util.ArrayList;
 import java.util.LinkedList;

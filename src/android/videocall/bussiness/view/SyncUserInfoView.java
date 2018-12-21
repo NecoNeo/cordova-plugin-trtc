@@ -1,6 +1,4 @@
-package com.tencent.qcloud.videocall.bussiness.view;
-
-import com.tencent.qcloud.videocall.bussiness.model.LoginInfo;
+package com.chuwa.cordova.trtc;
 
 /**
  * 从业务服务器获取登录接口

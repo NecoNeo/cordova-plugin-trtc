@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.ui.utils;
+package com.chuwa.cordova.trtc;
 
 import android.content.Context;
 import android.util.AttributeSet;

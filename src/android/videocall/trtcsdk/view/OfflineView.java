@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.trtcsdk.view;
+package com.chuwa.cordova.trtc;
 
 /**
  * 帐号被踢回调接口

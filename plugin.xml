@@ -53,15 +53,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Trtc">
                 <param name="android-package" value="com.chuwa.cordova.trtc.Trtc" />
-                <param name="android-package" value="com.tencent.qcloud.videocall.ui" />
-                <param name="android-package" value="com.tencent.qcloud.videocall.ui.adapter" />
-                <param name="android-package" value="com.tencent.qcloud.videocall.ui.utils" />
-                <param name="android-package" value="com.tencent.qcloud.videocall.trtcsdk" />
-                <param name="android-package" value="com.tencent.qcloud.videocall.trtcsdk.view" />
-                <param name="android-package" value="com.tencent.qcloud.videocall.trtcsdk.model" />
-                <param name="android-package" value="com.tencent.qcloud.videocall.bussiness" />
-                <param name="android-package" value="com.tencent.qcloud.videocall.bussiness.model" />
-                <param name="android-package" value="com.tencent.qcloud.videocall.bussiness.view" />
                 <!-- <param name="onload" value="true" /> -->
             </feature>
         </config-file>
@@ -110,37 +101,37 @@
         <source-file src="src/android/Trtc.java" target-dir="src/com/chuwa/cordova/trtc" />
         <source-file src="src/android/FakeR.java" target-dir="src/com/chuwa/cordova/trtc" />
 
-        <source-file src="src/android/videocall/trtcsdk/MessageObservable.java" target-dir="src/com/tencent/qcloud/videocall/trtcsdk" />
-        <source-file src="src/android/videocall/trtcsdk/SDKHelper.java" target-dir="src/com/tencent/qcloud/videocall/trtcsdk" />
+        <source-file src="src/android/videocall/trtcsdk/MessageObservable.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/trtcsdk/SDKHelper.java" target-dir="src/com/chuwa/cordova/trtc" />
 
-        <source-file src="src/android/videocall/trtcsdk/view/LoginView.java" target-dir="src/com/tencent/qcloud/videocall/trtcsdk/view" />
-        <source-file src="src/android/videocall/trtcsdk/view/OfflineView.java" target-dir="src/com/tencent/qcloud/videocall/trtcsdk/view" />
-        <source-file src="src/android/videocall/trtcsdk/view/RoomView.java" target-dir="src/com/tencent/qcloud/videocall/trtcsdk/view" />
-        <source-file src="src/android/videocall/trtcsdk/view/SpeedTestView.java" target-dir="src/com/tencent/qcloud/videocall/trtcsdk/view" />
-        <source-file src="src/android/videocall/trtcsdk/view/TipsView.java" target-dir="src/com/tencent/qcloud/videocall/trtcsdk/view" />
+        <source-file src="src/android/videocall/trtcsdk/view/LoginView.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/trtcsdk/view/OfflineView.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/trtcsdk/view/RoomView.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/trtcsdk/view/SpeedTestView.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/trtcsdk/view/TipsView.java" target-dir="src/com/chuwa/cordova/trtc" />
 
-        <source-file src="src/android/videocall/trtcsdk/model/RoomTipsInfo.java" target-dir="src/com/tencent/qcloud/videocall/trtcsdk/model" />
+        <source-file src="src/android/videocall/trtcsdk/model/RoomTipsInfo.java" target-dir="src/com/chuwa/cordova/trtc" />
 
-        <source-file src="src/android/videocall/ui/Constants.java" target-dir="src/com/tencent/qcloud/videocall/ui" />
-        <source-file src="src/android/videocall/ui/CreateActivity.java" target-dir="src/com/tencent/qcloud/videocall/ui" />
-        <source-file src="src/android/videocall/ui/RoomActivity.java" target-dir="src/com/tencent/qcloud/videocall/ui" />
+        <source-file src="src/android/videocall/ui/Constants.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/ui/CreateActivity.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/ui/RoomActivity.java" target-dir="src/com/chuwa/cordova/trtc" />
 
-        <source-file src="src/android/videocall/ui/utils/AppRuningWatcher.java" target-dir="src/com/tencent/qcloud/videocall/ui/utils" />
-        <source-file src="src/android/videocall/ui/utils/DlgMgr.java" target-dir="src/com/tencent/qcloud/videocall/ui/utils" />
-        <source-file src="src/android/videocall/ui/utils/MsgListView.java" target-dir="src/com/tencent/qcloud/videocall/ui/utils" />
-        <source-file src="src/android/videocall/ui/utils/RadioGroupDialog.java" target-dir="src/com/tencent/qcloud/videocall/ui/utils" />
+        <source-file src="src/android/videocall/ui/utils/AppRuningWatcher.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/ui/utils/DlgMgr.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/ui/utils/MsgListView.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/ui/utils/RadioGroupDialog.java" target-dir="src/com/chuwa/cordova/trtc" />
 
-        <source-file src="src/android/videocall/ui/adapter/ChatMsgAdapter.java" target-dir="src/com/tencent/qcloud/videocall/ui/adapter" />
+        <source-file src="src/android/videocall/ui/adapter/ChatMsgAdapter.java" target-dir="src/com/chuwa/cordova/trtc" />
 
-        <source-file src="src/android/videocall/bussiness/OKHelper.java" target-dir="src/com/tencent/qcloud/videocall/bussiness" />
+        <source-file src="src/android/videocall/bussiness/OKHelper.java" target-dir="src/com/chuwa/cordova/trtc" />
 
-        <source-file src="src/android/videocall/bussiness/view/SyncPrivateMapkeyView.java" target-dir="src/com/tencent/qcloud/videocall/bussiness/view" />
-        <source-file src="src/android/videocall/bussiness/view/SyncUserInfoView.java" target-dir="src/com/tencent/qcloud/videocall/bussiness/view" />
+        <source-file src="src/android/videocall/bussiness/view/SyncPrivateMapkeyView.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/bussiness/view/SyncUserInfoView.java" target-dir="src/com/chuwa/cordova/trtc" />
 
-        <source-file src="src/android/videocall/bussiness/model/BussinessConstants.java" target-dir="src/com/tencent/qcloud/videocall/bussiness/model" />
-        <source-file src="src/android/videocall/bussiness/model/LoginInfo.java" target-dir="src/com/tencent/qcloud/videocall/bussiness/model" />
-        <source-file src="src/android/videocall/bussiness/model/PrivateMapKeyInfo.java" target-dir="src/com/tencent/qcloud/videocall/bussiness/model" />
-        <source-file src="src/android/videocall/bussiness/model/UserInfo.java" target-dir="src/com/tencent/qcloud/videocall/bussiness/model" />
+        <source-file src="src/android/videocall/bussiness/model/BussinessConstants.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/bussiness/model/LoginInfo.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/bussiness/model/PrivateMapKeyInfo.java" target-dir="src/com/chuwa/cordova/trtc" />
+        <source-file src="src/android/videocall/bussiness/model/UserInfo.java" target-dir="src/com/chuwa/cordova/trtc" />
 
         <resource-file src="src/android/res/layout/create_activity.xml" target="res/layout/create_activity.xml" />
         <resource-file src="src/android/res/layout/item_msg.xml" target="res/layout/item_msg.xml" />

@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.ui;
+package com.chuwa.cordova.trtc;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -26,20 +26,6 @@ import com.tencent.ilivesdk.data.msg.ILiveCustomMessage;
 import com.tencent.ilivesdk.data.msg.ILiveTextMessage;
 import com.tencent.ilivesdk.listener.ILiveMessageListener;
 import com.tencent.ilivesdk.view.AVRootView;
-import com.chuwa.cordova.trtc.FakeR;
-import com.tencent.qcloud.videocall.bussiness.model.BussinessConstants;
-import com.tencent.qcloud.videocall.bussiness.model.PrivateMapKeyInfo;
-import com.tencent.qcloud.videocall.bussiness.view.SyncPrivateMapkeyView;
-import com.tencent.qcloud.videocall.trtcsdk.MessageObservable;
-import com.tencent.qcloud.videocall.trtcsdk.SDKHelper;
-import com.tencent.qcloud.videocall.bussiness.model.UserInfo;
-import com.tencent.qcloud.videocall.bussiness.OKHelper;
-import com.tencent.qcloud.videocall.trtcsdk.view.RoomView;
-import com.tencent.qcloud.videocall.trtcsdk.view.TipsView;
-import com.tencent.qcloud.videocall.ui.adapter.ChatMsgAdapter;
-import com.tencent.qcloud.videocall.ui.utils.DlgMgr;
-import com.tencent.qcloud.videocall.ui.utils.MsgListView;
-import com.tencent.qcloud.videocall.ui.utils.RadioGroupDialog;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;

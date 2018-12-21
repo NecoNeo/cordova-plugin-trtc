@@ -19,8 +19,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 // import org.json.JSONObject;
 
-import com.tencent.qcloud.videocall.ui.CreateActivity;
-
 
 public class Trtc extends CordovaPlugin {
 

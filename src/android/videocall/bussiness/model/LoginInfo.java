@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.bussiness.model;
+package com.chuwa.cordova.trtc;
 
 import org.json.JSONObject;
 

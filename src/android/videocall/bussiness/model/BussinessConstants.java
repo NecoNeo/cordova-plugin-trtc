@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.bussiness.model;
+package com.chuwa.cordova.trtc;
 
 /**
  * 业务常量定义

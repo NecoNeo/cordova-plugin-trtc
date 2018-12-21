@@ -1,9 +1,8 @@
-package com.tencent.qcloud.videocall.bussiness.model;
+package com.chuwa.cordova.trtc;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.tencent.qcloud.videocall.ui.Constants;
 
 /**
  * Created by tencent on 2018/5/21.

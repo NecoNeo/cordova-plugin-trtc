@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.ui.adapter;
+package com.chuwa.cordova.trtc;
 
 import android.content.Context;
 import android.text.Spannable;
@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import com.tencent.ilivesdk.data.ILiveMessage;
 import com.tencent.ilivesdk.data.msg.ILiveTextMessage;
-import com.chuwa.cordova.trtc.FakeR;
 
 import java.util.List;
 

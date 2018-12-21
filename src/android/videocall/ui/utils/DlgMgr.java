@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.ui.utils;
+package com.chuwa.cordova.trtc;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -6,8 +6,6 @@ import android.content.res.Resources;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.chuwa.cordova.trtc.FakeR;
 
 
 /**

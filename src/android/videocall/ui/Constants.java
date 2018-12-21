@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.ui;
+package com.chuwa.cordova.trtc;
 
 /**
  * Created by tencent on 2018/5/21.

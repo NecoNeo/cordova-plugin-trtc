@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.trtcsdk.view;
+package com.chuwa.cordova.trtc;
 
 import com.tencent.ilivesdk.data.msg.ILiveTextMessage;
 

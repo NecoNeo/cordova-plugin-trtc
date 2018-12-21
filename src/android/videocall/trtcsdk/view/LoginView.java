@@ -1,4 +1,4 @@
-package com.tencent.qcloud.videocall.trtcsdk.view;
+package com.chuwa.cordova.trtc;
 
 /**
  * SDK登录返回接口
