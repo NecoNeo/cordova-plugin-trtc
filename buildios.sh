@@ -1,7 +1,11 @@
 #! /bin/bash
 
+# for ios build use
+
 # App Id
 appId="app_id"
+
+echo ${appId}
 
 echo -e "prepare...\n"
 cordova platform rm ios

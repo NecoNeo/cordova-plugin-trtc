@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# for build use
+# for android build use
 
 # App Id
 appId="app_id"
