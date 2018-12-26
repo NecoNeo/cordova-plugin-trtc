@@ -22,14 +22,14 @@ import org.json.JSONException;
 
 public class Trtc extends CordovaPlugin {
 
-    static final String ACTION_SHOW_CREATE_ACTIVITY = "showCreateActivity"; // for test
+    static final String ACTION_SHOW_CREATE_PAGE = "showCreatePage"; // for test
     static final String ACTION_JOIN_CHANNEL = "joinChannel";
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         Activity activity = this.cordova.getActivity();
 
-        if (ACTION_SHOW_CREATE_ACTIVITY.equals(action)) {
+        if (ACTION_SHOW_CREATE_PAGE.equals(action)) {
             Intent intent = new Intent(activity, CreateActivity.class);
             cordova.startActivityForResult(this, intent, 666);
         }

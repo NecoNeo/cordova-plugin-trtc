@@ -6,8 +6,8 @@ Trtc.prototype.joinChannel = function(channelId, uid) {
     // exec(function(result) {}, function(err) {}, 'Agora', 'joinChannel', [channelId, uid]);
 };
 
-Trtc.prototype.showCreateActivity = function() {
-    exec(function(result) {}, function(err) {}, 'Trtc', 'showCreateActivity', []);
+Trtc.prototype.showCreatePage = function() {
+    exec(function(result) {}, function(err) {}, 'Trtc', 'showCreatePage', []);
 }
 
 module.exports = new Trtc();
