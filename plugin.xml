@@ -50,6 +50,7 @@
         <framework src="CoreMedia.framework" />
         <framework src="CoreTelephony.framework" />
         <framework src="CoreVideo.framework" />
+        <!-- <framework src="GPUImage.framework" /> -->
         <framework src="ImageIO.framework" />
         <framework src="JavaScriptCore.framework" />
         <framework src="OpenAL.framework" />
@@ -81,7 +82,7 @@
         <framework src="src/ios/libs/ILiveSDK/ILiveLogReport.framework" custom="true" />
         <framework src="src/ios/libs/ILiveSDK/TILLiveSDK.framework" custom="true" />
 
-        <header-file src="src/ios/libs/BeautySDK/include/TXCRenderView.h" />
+        <!-- <header-file src="src/ios/libs/BeautySDK/include/TXCRenderView.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXCVideoPreprocessor.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXEVideoPreprocessorDef.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXEVideoTypeDef.h" />
@@ -89,7 +90,7 @@
         <header-file src="src/ios/libs/BeautySDK/include/TXIVideoPreprocessorDelegate.h" />
         <source-file src="src/ios/libs/BeautySDK/libTXMRenderer.a" framework="true" />
         <source-file src="src/ios/libs/BeautySDK/libTXMVideoPreprocessor.a" framework="true" />
-        <source-file src="src/ios/libs/BeautySDK/libTXMBasic.a" framework="true" />
+        <source-file src="src/ios/libs/BeautySDK/libTXMBasic.a" framework="true" /> -->
 
         <config-file target="*TrtcConfig.plist" parent="AppId">
             <string>$APP_ID</string>
