@@ -122,12 +122,12 @@
         <framework src="src/ios/libs/BeautySDK/Pitu/GPUImage.framework" custom="true" />
         <source-file src="src/ios/libs/BeautySDK/Pitu/libcrypto.a" framework="true" />
         <source-file src="src/ios/libs/BeautySDK/Pitu/libssl.a" framework="true" />
-        <!-- <header-file src="src/ios/libs/BeautySDK/include/TXCRenderView.h" />
+        <header-file src="src/ios/libs/BeautySDK/include/TXCRenderView.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXCVideoPreprocessor.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXEVideoPreprocessorDef.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXEVideoTypeDef.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXINotifyDelegate.h" />
-        <header-file src="src/ios/libs/BeautySDK/include/TXIVideoPreprocessorDelegate.h" /> -->
+        <header-file src="src/ios/libs/BeautySDK/include/TXIVideoPreprocessorDelegate.h" />
         <source-file src="src/ios/libs/BeautySDK/libTXMRenderer.a" framework="true" />
         <source-file src="src/ios/libs/BeautySDK/libTXMVideoPreprocessor.a" framework="true" />
         <source-file src="src/ios/libs/BeautySDK/libTXMBasic.a" framework="true" />
