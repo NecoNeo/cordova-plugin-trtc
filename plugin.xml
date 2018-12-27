@@ -37,10 +37,48 @@
 
         <header-file src="src/ios/TrtcPlugin.h" />
         <source-file src="src/ios/TrtcPlugin.m" />
+        <!-- <header-file src="src/ios/Trtc/AppDelegate.h" />
+        <source-file src="src/ios/Trtc/AppDelegate.m" /> -->
+        <header-file src="src/ios/Trtc/TCLiveConfigDefine.h" />
+        <header-file src="src/ios/Trtc/TCLiveJoinRoomViewController.h" />
+        <source-file src="src/ios/Trtc/TCLiveJoinRoomViewController.m" />
+        <header-file src="src/ios/Trtc/TCLiveRequestManager.h" />
+        <source-file src="src/ios/Trtc/TCLiveRequestManager.m" />
+        <header-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveChatTableView.h" />
+        <source-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveChatTableView.m" />
+        <header-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveChatTableViewCell.h" />
+        <source-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveChatTableViewCell.m" />
+        <header-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveRoomViewController.h" />
+        <source-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveRoomViewController.m" />
+        <header-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveUITools/UIColorEX.h" />
+        <source-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveUITools/UIColorEX.m" />
+        <header-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveUITools/UIToastView.h" />
+        <source-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveUITools/UIToastView.m" />
+        <header-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveVideoControlBar.h" />
+        <source-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveVideoControlBar.m" />
+        <header-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveVideoLayoutView.h" />
+        <source-file src="src/ios/Trtc/TCLiveRoomVC/TCLiveVideoLayoutView.m" />
 
         <resource-file src="src/ios/TrtcConfig.plist" />
-        <!-- <resource-file src="src/ios/name.storyboard" target-dir="" /> -->
-        <!-- <resource-file src="src/ios/Assets.xcassets" /> -->
+        
+        <!-- images -->
+        <resource-file src="src/ios/res/beauty-dis.png" />
+        <resource-file src="src/ios/res/beauty.png" />
+        <resource-file src="src/ios/res/bg.png" />
+        <resource-file src="src/ios/res/camera-gray.png" />
+        <resource-file src="src/ios/res/camera.png" />
+        <resource-file src="src/ios/res/chat.png" />
+        <resource-file src="src/ios/res/doubleroom.png" />
+        <resource-file src="src/ios/res/feedback.png" />
+        <resource-file src="src/ios/res/ic_toast_success@2x.png" />
+        <resource-file src="src/ios/res/icon_sign@2x.png" />
+        <resource-file src="src/ios/res/log.png" />
+        <resource-file src="src/ios/res/log2.png" />
+        <resource-file src="src/ios/res/mic-dis.png" />
+        <resource-file src="src/ios/res/mic.png" />
+        <resource-file src="src/ios/res/muti_room_bg.png" />
+        <resource-file src="src/ios/res/role.png" />
+        <resource-file src="src/ios/res/ui_title_arrow_left.png" />
 
         <!-- lib -->
         <framework src="Accelerate.framework" />
@@ -50,7 +88,6 @@
         <framework src="CoreMedia.framework" />
         <framework src="CoreTelephony.framework" />
         <framework src="CoreVideo.framework" />
-        <!-- <framework src="GPUImage.framework" /> -->
         <framework src="ImageIO.framework" />
         <framework src="JavaScriptCore.framework" />
         <framework src="OpenAL.framework" />
@@ -82,15 +119,18 @@
         <framework src="src/ios/libs/ILiveSDK/ILiveLogReport.framework" custom="true" />
         <framework src="src/ios/libs/ILiveSDK/TILLiveSDK.framework" custom="true" />
 
+        <framework src="src/ios/libs/BeautySDK/Pitu/GPUImage.framework" custom="true" />
+        <source-file src="src/ios/libs/BeautySDK/Pitu/libcrypto.a" framework="true" />
+        <source-file src="src/ios/libs/BeautySDK/Pitu/libssl.a" framework="true" />
         <!-- <header-file src="src/ios/libs/BeautySDK/include/TXCRenderView.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXCVideoPreprocessor.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXEVideoPreprocessorDef.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXEVideoTypeDef.h" />
         <header-file src="src/ios/libs/BeautySDK/include/TXINotifyDelegate.h" />
-        <header-file src="src/ios/libs/BeautySDK/include/TXIVideoPreprocessorDelegate.h" />
+        <header-file src="src/ios/libs/BeautySDK/include/TXIVideoPreprocessorDelegate.h" /> -->
         <source-file src="src/ios/libs/BeautySDK/libTXMRenderer.a" framework="true" />
         <source-file src="src/ios/libs/BeautySDK/libTXMVideoPreprocessor.a" framework="true" />
-        <source-file src="src/ios/libs/BeautySDK/libTXMBasic.a" framework="true" /> -->
+        <source-file src="src/ios/libs/BeautySDK/libTXMBasic.a" framework="true" />
 
         <config-file target="*TrtcConfig.plist" parent="AppId">
             <string>$APP_ID</string>
