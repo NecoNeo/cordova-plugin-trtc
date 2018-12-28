@@ -37,8 +37,6 @@
 
         <header-file src="src/ios/TrtcPlugin.h" />
         <source-file src="src/ios/TrtcPlugin.m" />
-        <!-- <header-file src="src/ios/Trtc/AppDelegate.h" />
-        <source-file src="src/ios/Trtc/AppDelegate.m" /> -->
         <header-file src="src/ios/Trtc/TCLiveConfigDefine.h" />
         <header-file src="src/ios/Trtc/TCLiveJoinRoomViewController.h" />
         <source-file src="src/ios/Trtc/TCLiveJoinRoomViewController.m" />
